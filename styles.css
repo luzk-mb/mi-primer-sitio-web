@@ -7,16 +7,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffe6f0; /* Color de fondo rosado claro */
     color: #333;
     padding: 20px;
 }
 
 header {
-    background-color: #333;
+    background-color: #ff4d94; /* Rosado fuerte para el encabezado */
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 h1, h2 {
@@ -48,7 +48,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #333;
+    background-color: #ff4d94; /* Rosado fuerte para los encabezados de la tabla */
     color: white;
 }
 
@@ -65,18 +65,21 @@ form input {
     padding: 8px;
     width: 100%;
     margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 button {
     padding: 10px 15px;
-    background-color: #333;
+    background-color: #ff4d94;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #ff1a6e; /* Rosado más oscuro al hacer hover */
 }
 
 footer {
@@ -84,4 +87,46 @@ footer {
     margin-top: 40px;
     font-size: 14px;
     color: #777;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+
+    table, ul, ol {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 8px 10px;
+    }
 }
